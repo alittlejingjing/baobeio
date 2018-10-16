@@ -41,7 +41,7 @@ gulp.task("html", ()=>{
 })
 gulp.task("js", ()=>{
     return gulp.src("js/*.js")
-    .pipe(js().on("error",js.logError))
+    // .pipe(js().on("error",js.logError))
     .pipe(gulp.dest("dist/js")).pipe(connect.reload());
 })
 gulp.task("images", ()=>{
@@ -53,8 +53,11 @@ gulp.task("images", ()=>{
 
 
 gulp.task("watch", ()=>{
-    gulp.watch("baobeio.html",["html","css"]);
+    gulp.watch("*.html",["html","html"]);
     gulp.watch("css/*.css",["html","css"]);
+    gulp.watch("sass/*.scss",["html","sass"]);
+    gulp.watch("js/*.js",["html","js"]);
+    gulp.watch("images/*",["html","images"]);
 })
 
 gulp.task("default",["watch","connect"]);

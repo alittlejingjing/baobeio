@@ -1,0 +1,18 @@
+$("#left").click(function(){
+    $("#list1").css({
+        display:"block"
+    })
+    $("#list2").css({
+        display:"none"
+    })
+    console.log(1)
+})
+$("#right").click(function(){
+    $("#list2").css({
+        display:"block"
+    })
+    $("#list1").css({
+        display:"none"
+    })
+    console.log(2)
+})

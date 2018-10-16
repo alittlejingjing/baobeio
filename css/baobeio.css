@@ -182,7 +182,24 @@ header li .zi{
 }
 .nav .first li{
     float: left;
+    position: relative;
 }
+.nav .first li:nth-child(4) img{
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+.nav .first li:nth-child(5) img{
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+.nav .first li:nth-child(6) img{
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+
 .nav .first li a{
     display: block;
     font-size: 16px;
@@ -520,17 +537,20 @@ section .warp2 .warp2-top .more{
     line-height: 45px;
     color: #999999;
 }
-section .warp2 #warp2-bottom .box1{
+section .warp2 #warp2-bottom1 .box1{
     width: 174px;
     height: 226px;
     float: left;
     margin-left: 26px;
     margin-top: 14px;
 }
-section .warp2 #warp2-bottom .box1 img{
+section .warp2 #warp2-bottom1 .box1 img{
     margin: 0 auto;
 }
-section .warp2 #warp2-bottom .box1 .jian{
+section .warp2 #warp2-bottom1 .box1 img:hover{
+    opacity: 0.7;
+}
+section .warp2 #warp2-bottom1 .box1 .jian{
     width: 160px;
     height: 12px;
     line-height: 12px;
@@ -541,14 +561,92 @@ section .warp2 #warp2-bottom .box1 .jian{
     display: block;
     color: #000000;
 }
-section .warp2 #warp2-bottom .box1 .jiang{
+section .warp2 #warp2-bottom1 .box1 .jiang{
     width: 174px;
     height: 12px;
     line-height: 12px;
     color: #888888;
     margin-top: 10px;
 }
-section .warp2 #warp2-bottom .box1 .jiang b{
+section .warp2 #warp2-bottom1 .box1 .jiang b{
+    color: #fb1520;
+}
+
+section .warp2 #warp2-bottom2{
+    display: none;
+}
+section .warp2 #warp2-bottom2 .box1{
+    width: 174px;
+    height: 226px;
+    float: left;
+    margin-left: 26px;
+    margin-top: 14px;
+}
+section .warp2 #warp2-bottom2 .box1 img{
+    margin: 0 auto;
+}
+section .warp2 #warp2-bottom2 .box1 img:hover{
+    opacity: 0.7;
+}
+section .warp2 #warp2-bottom2 .box1 .jian{
+    width: 160px;
+    height: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    color: #000000;
+}
+section .warp2 #warp2-bottom2 .box1 .jiang{
+    width: 174px;
+    height: 12px;
+    line-height: 12px;
+    color: #888888;
+    margin-top: 10px;
+}
+section .warp2 #warp2-bottom2 .box1 .jiang b{
+    color: #fb1520;
+}
+
+
+section .warp2 #warp2-bottom3{
+    display: none
+}
+section .warp2 #warp2-bottom3 .box1{
+    width: 174px;
+    height: 226px;
+    float: left;
+    margin-left: 26px;
+    margin-top: 14px;
+
+}
+section .warp2 #warp2-bottom3 .box1 img{
+    margin: 0 auto;
+}
+section .warp2 #warp2-bottom3 .box1 img:hover{
+    opacity: 0.7;
+}
+section .warp2 #warp2-bottom3 .box1 .jian{
+    width: 160px;
+    height: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    color: #000000;
+}
+section .warp2 #warp2-bottom3 .box1 .jiang{
+    width: 174px;
+    height: 12px;
+    line-height: 12px;
+    color: #888888;
+    margin-top: 10px;
+}
+section .warp2 #warp2-bottom3 .box1 .jiang b{
     color: #fb1520;
 }
 /* warp3 */
@@ -598,6 +696,9 @@ section .warp3 .warp3-bottom .box1{
 section .warp3 .warp3-bottom .box1 img{
     margin: 0 auto;
     display: block;
+}
+section .warp3 .warp3-bottom .box1 img:hover{
+    opacity: 0.7;
 }
 section .warp3 .warp3-bottom .box1 .jian{
     width: 160px;
@@ -669,6 +770,13 @@ section .warp4-bottom .ren{
     height: 88px;
     border-radius: 50%;
     margin-right: 5px;
+}
+section .warp4-bottom:hover .ren{
+    border-color: #fb1520;
+    color: #fb1520;
+}
+section .warp4-bottom:hover .fashion{
+    color: #fb1520
 }
 section .warp4-bottom .fashion{
     width: 64px;
@@ -750,8 +858,10 @@ section .warp5 .left .wrap-1{
     width: 175px;
     padding:20px 0;
     float: left;
-    margin-right: 5px;
-    
+    margin-right: 5px;   
+}
+section .warp5 .left .wrap-1:hover{
+    opacity: 0.7;
 }
 section .warp5 .left .wrap-1 .tian{
     margin-bottom: 5px;
@@ -833,8 +943,10 @@ section .warp5 .right .wrap-1{
     width: 175px;
     padding:20px 0;
     float: left;
-    margin-right: 5px;
-    
+    margin-right: 5px; 
+}
+section .warp5 .right .wrap-1:hover{
+    opacity: 0.7;
 }
 section .warp5 .right .wrap-1 .tian{
     margin-bottom: 5px;
@@ -915,6 +1027,9 @@ section .warp6-bottom .warp6-1{
     float: left;
     margin-right: 3px;
 }
+section .warp6-bottom .warp6-1:hover .img1{
+    opacity: 0.7;
+}
 section .warp6-bottom .warp6-1 .img2{
     width: 50px;
     height: 50px;
@@ -956,6 +1071,9 @@ section .warp6-bottom .warp6-2 #right{
     background: #fff;
     border: none;
     outline: none;
+}
+section .warp6-bottom .warp6-2 #list2{
+    display: none;
 }
 section .warp6-bottom .warp6-2 .list{
     height: 76px;
@@ -1103,6 +1221,105 @@ footer .ban{
 footer .img{
     margin-right: 10px;
 }
+
+/* 固定栏 */
+.celan{
+    width: 40px;
+    height: 100%;
+    background: #2b2b2b;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.celan .new{
+    width: 16px;
+    height: 118px;
+    padding: 0 12px;
+    margin: 119px auto 35px;
+    color: #fff;
+}
+.celan .new:hover{
+    background: #fb1520;
+}
+.celan .new i{
+    width: 12px;
+    height: 76px;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    display: block;
+    padding:20px 0;
+}
+.celan .fudong{
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    margin: 5px 0;
+    position: relative;
+}
+.celan .fudong:hover{
+    background: #fb1520;
+}
+.celan .fudong:hover .show{
+    transform: translateX(20px);
+    transition: 0.5s;
+    opacity: 1;
+}
+.celan img{
+    margin-top: 3px;
+}
+.celan .show{
+    color: #fff;
+    width: 111px;
+    height: 35px;
+    background: #2b2b2b;
+    text-align: center;
+    line-height: 35px;
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: -130px;
+    opacity: 0;
+}
+.celan .show i{
+    width: 0;
+    height: 0;
+    border-left: 5px solid #2b2b2b;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    top: 13px;
+    right: -5px;
+}
+.celan .show1{
+    color: #fff;
+    width: 138px;
+    height: 155px;
+    background: #2b2b2b;
+    text-align: center;
+    position: relative;
+    position: absolute;
+    top:-124px;
+    left: -157px;
+    padding-top: 5px;
+    opacity: 0;
+}
+.celan .show1 i{
+    width: 0;
+    height: 0;
+    border-left: 5px solid #2b2b2b;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    position: absolute;
+    top: 137px;
+    right: -5px;
+}
+.celan .fudong:hover .show1{
+    opacity: 1;
+    transform: translateX(20px);
+    transition: 0.5s;
+    
+}
+
 
 
 
