@@ -49,6 +49,11 @@ gulp.task("images", ()=>{
     .pipe(gulp.dest("dist/images"))
     .pipe(connect.reload());
 })
+gulp.task("php", ()=>{
+    return gulp.src("*.php")
+    .pipe(gulp.dest("dist/php"))
+    .pipe(connect.reload());
+})
 
 
 
@@ -58,6 +63,7 @@ gulp.task("watch", ()=>{
     gulp.watch("sass/*.scss",["html","sass"]);
     gulp.watch("js/*.js",["html","js"]);
     gulp.watch("images/*",["html","images"]);
+    gulp.watch("php/*",["html","php"]);
 })
 
 gulp.task("default",["watch","connect"]);

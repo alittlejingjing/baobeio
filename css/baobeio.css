@@ -132,13 +132,17 @@ header li .shou{
 header li .phone{
     margin-left: 14px;
 }
-header li .ertu{
+header .li3 .ertu{
     position: absolute;
-    right: 128px;
-    top: 23px;
-    /* display: none; */
+    left: -8px;
+    top: 16px;
+    display: none;
+    clear: both;
 }
-header li .shou:hover .ertu{
+header .li3{
+    position: relative;
+}
+header .li3:hover .ertu{
     display: block;
 }
 header li .zi{
@@ -1262,11 +1266,15 @@ section .warp8 .last .lala{
     margin-left: 14px;
     margin-top: 34px;
 }
+/* footer */
 footer{
     float: left;
     background: #333333;
     width: 100%;
-    padding: 36px 0 8px 16px;
+    padding: 36px 0 8px 0;
+}
+footer ul{
+    margin-left: 16px;
 }
 footer ul li{
     width: 76px;
@@ -1291,8 +1299,13 @@ footer ul li a:hover{
 footer .ban{
     color: #b3b3b3;
     margin-bottom: 20px;
+    margin-left: 16px;
 }
 footer .img{
+    margin-right: 10px;
+}
+footer .img22{
+    margin-left: 16px;
     margin-right: 10px;
 }
 
