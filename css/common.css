@@ -285,3 +285,45 @@ header li .zi{
     margin-left: 19px;
     float: left;
 }
+/* footer */
+footer{
+    float: left;
+    background: #333333;
+    width: 100%;
+    padding: 36px 0 8px 0;
+}
+footer ul{
+    margin-left: 16px;
+}
+footer ul li{
+    width: 76px;
+    height: 12px;
+    line-height: 12px;
+    border-right: 1px solid #b3b3b3;
+    float: left;
+    margin-bottom: 20px;
+}
+footer ul li:nth-child(7){
+    border-right: none;
+}
+footer ul li a{
+    display: block;
+    width: 76px;
+    text-align: center;
+    color: #b3b3b3;
+}
+footer ul li a:hover{
+    color: #fb1520;
+}
+footer .ban{
+    color: #b3b3b3;
+    margin-bottom: 20px;
+    margin-left: 16px;
+}
+footer .img{
+    margin-right: 10px;
+}
+footer .img22{
+    margin-left: 16px;
+    margin-right: 10px;
+}

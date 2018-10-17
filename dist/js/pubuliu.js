@@ -37,7 +37,7 @@
                     // var height = json[i].height / (json[i].width / 220);
                     // if(isNaN(height)) continue; 
                     html += `  <div class="warp1 clearfix">
-                                <img class="pacture" src="${json[i].image}" alt="">
+                                <a href="http://localhost:8888/detail.html"><img class="pacture" src="${json[i].image}" alt=""></a>
                                 <p class="free">【免费】修身莫代尔打底衫+4</p>
                                 <p class="fen">份数：<b>8</b></p>
                                 <p class="see">已关注：<b>344</b>次</p>

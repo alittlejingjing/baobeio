@@ -1,0 +1,224 @@
+section {
+  width: 100%;
+  background: #f6f6f6;
+  border-top: 2px solid #fb1520; }
+  section .big {
+    width: 1205px;
+    margin: 0 auto; }
+    section .big .tou {
+      width: 1205px;
+      height: 50px;
+      line-height: 50px; }
+      section .big .tou img {
+        float: left;
+        margin-top: 15px; }
+      section .big .tou .now {
+        float: left;
+        margin-left: 10px; }
+      section .big .tou .mian {
+        float: right; }
+    section .big .warp1 {
+      width: 1203px;
+      height: 505px;
+      background: #fff;
+      border: 1px solid #ddd; }
+      section .big .warp1 .left {
+        padding: 20px 15px 0 5px;
+        width: 413px;
+        float: left;
+        position: relative; }
+        section .big .warp1 .left #small {
+          width: 380px;
+          height: 380px;
+          padding: 8px;
+          position: relative;
+          border: 1px solid #ddd;
+          float: left; }
+          section .big .warp1 .left #small img {
+            width: 380px;
+            height: 380px; }
+          section .big .warp1 .left #small #frame {
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 0 5px #000;
+            border-radius: 5px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            display: none;
+            background-image: url(../images/20181013113900_97907_rez-380-380.jpg);
+            background-size: 380px 380px;
+            background-repeat: no-repeat; }
+          section .big .warp1 .left #small #film {
+            width: 395px;
+            height: 395px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 999;
+            cursor: none; }
+        section .big .warp1 .left #big {
+          width: 500px;
+          height: 380px;
+          overflow: hidden;
+          box-shadow: 0 0 5px #000;
+          float: left;
+          position: absolute;
+          top: 29px;
+          left: 410px;
+          display: none; }
+          section .big .warp1 .left #big img {
+            width: 1600px;
+            height: 1600px;
+            position: absolute;
+            left: 0;
+            top: 0; }
+        section .big .warp1 .left .fen {
+          float: left;
+          margin-top: 24px; }
+        section .big .warp1 .left .ci {
+          margin-top: 24px; }
+      section .big .warp1 .center {
+        width: 580px;
+        height: 476px;
+        float: left;
+        border-right: 1px solid #ddd;
+        padding-top: 30px; }
+        section .big .warp1 .center b {
+          color: #fb1520;
+          font-size: 18px; }
+        section .big .warp1 .center .try1 {
+          margin-top: 15px; }
+        section .big .warp1 .center .try2 {
+          margin-top: 10px; }
+        section .big .warp1 .center .try3 {
+          margin-top: 10px; }
+        section .big .warp1 .center .time {
+          width: 517px;
+          height: 70px;
+          background: #f4f4f4;
+          padding: 10px 4px;
+          margin-top: 7px; }
+          section .big .warp1 .center .time img {
+            float: left; }
+          section .big .warp1 .center .time .try4 {
+            float: left;
+            margin-left: 5px;
+            width: 473px; }
+          section .big .warp1 .center .time .try5 {
+            margin-top: 20px;
+            float: left; }
+        section .big .warp1 .center .try6 {
+          margin-top: 27px; }
+        section .big .warp1 .center .please {
+          width: 176px;
+          height: 43px;
+          background: #fb1520;
+          color: #fff;
+          margin-top: 20px;
+          border: none;
+          outline: none; }
+        section .big .warp1 .center .ti {
+          width: 515px;
+          height: 45px;
+          background: #f4f4f4;
+          padding: 5px;
+          margin-top: 10px; }
+          section .big .warp1 .center .ti .ti2 li a {
+            float: left;
+            color: #5e5c5c;
+            margin-right: 4px;
+            margin-top: 7px; }
+      section .big .warp1 .right {
+        float: left;
+        width: 189px; }
+        section .big .warp1 .right .sao {
+          margin: 10px 51px; }
+        section .big .warp1 .right img {
+          margin: 0 34px; }
+    section .big .warp2 {
+      width: 1205px;
+      margin-top: 15px; }
+      section .big .warp2 .left {
+        width: 230px;
+        padding: 0 15px 15px 15px;
+        border: 1px solid #ddd;
+        background: #fff;
+        float: left; }
+        section .big .warp2 .left .dian {
+          margin: 10px 0; }
+        section .big .warp2 .left .warp2-1 {
+          border: 1px solid #ddd; }
+          section .big .warp2 .left .warp2-1 .shop {
+            height: 44px;
+            border-top: 2px solid #fb1520;
+            background: #f6f6f6;
+            text-align: center;
+            line-height: 44px; }
+          section .big .warp2 .left .warp2-1 a {
+            position: relative;
+            display: block;
+            color: #fff; }
+            section .big .warp2 .left .warp2-1 a .yin {
+              width: 196px;
+              text-align: center;
+              position: absolute;
+              left: 15px;
+              bottom: 0;
+              height: 20px;
+              line-height: 20px;
+              background: #7e7e7b;
+              opacity: 0.8;
+              display: none; }
+            section .big .warp2 .left .warp2-1 a:hover .yin {
+              display: block; }
+          section .big .warp2 .left .warp2-1 img {
+            margin: 15px;
+            display: block; }
+        section .big .warp2 .left .warp2-2 {
+          border: 1px solid #ddd;
+          margin: 15px 0; }
+          section .big .warp2 .left .warp2-2 .sheng {
+            height: 45px;
+            line-height: 45px;
+            background: #fb1520;
+            text-align: center;
+            color: #fff;
+            font-size: 14px; }
+          section .big .warp2 .left .warp2-2 .content {
+            width: 200px;
+            padding: 15px 10px; }
+      section .big .warp2 .right {
+        width: 886px;
+        border: 1px solid #ddd;
+        float: left;
+        margin-left: 15px;
+        background: #fff;
+        padding: 20px; }
+        section .big .warp2 .right .shi {
+          color: #fb1520;
+          font-size: 14px;
+          font-weight: bold; }
+        section .big .warp2 .right .ke {
+          margin-top: 10px;
+          margin-bottom: 10px; }
+        section .big .warp2 .right .btnlist {
+          height: 50px;
+          line-height: 50px;
+          background: #f3f3f3;
+          border: 1px solid #ddd;
+          border-left: none;
+          border-right: none; }
+          section .big .warp2 .right .btnlist button {
+            width: 140px;
+            text-align: center;
+            outline: none;
+            border: none;
+            background: #f3f3f3;
+            height: 50px; }
+            section .big .warp2 .right .btnlist button.active {
+              background: #fff;
+              color: #fb1520;
+              border-top: 2px solid #fb1520;
+              height: 49px; }

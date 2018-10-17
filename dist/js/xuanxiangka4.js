@@ -1,0 +1,39 @@
+$("#btn1").click(function(){
+    $("#rong1").css({
+        display:"block"
+    })
+    $("#rong2").css({
+        display:"none"
+    })
+    $("#rong3").css({
+        display:"none"
+    })
+    $(".btnlist button").removeClass("active");
+    $(this).addClass("active");
+})
+$("#btn2").click(function(){
+    $("#rong2").css({
+        display:"block"
+    })
+    $("#rong1").css({
+        display:"none"
+    })
+    $("#rong3").css({
+        display:"none"
+    })
+    $(".btnlist button").removeClass("active");
+    $(this).addClass("active");
+})
+$("#btn3").click(function(){
+    $("#rong3").css({
+        display:"block"
+    })
+    $("#rong2").css({
+        display:"none"
+    })
+    $("#rong1").css({
+        display:"none"
+    })
+    $(".btnlist button").removeClass("active");
+    $(this).addClass("active");
+})
