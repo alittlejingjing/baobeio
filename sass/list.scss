@@ -1,0 +1,157 @@
+section{
+    width: 100%;
+    background: #f6f6f6;
+    border-top: 2px solid #fb1520;
+    padding-top: 15px;
+    .zhong{
+        margin: 0 auto;
+        width: 1205px;
+        .main{
+            margin-left: 1105px;
+            color: #fb1520    
+        }
+        ul{
+           border: 1px solid #dddddd;
+           line-height: 30px;
+           li{
+               float: left;
+               height: 30px;
+               line-height: 30px;
+              
+               a{
+                float: left;
+                width: 50px;
+                color: #000;
+                height: 13px;
+                width: 50px;
+                margin-left:17px;
+            }
+            &:nth-child(1){
+                margin-left: 15px;
+            }
+           }
+        }
+        ol{
+            border: 1px solid #dddddd;
+            height: 30px;
+            line-height: 30px;
+            margin-top: 17px;
+            width: 977px;
+            li{
+                float: left;
+                width: 69px;
+                height: 29px;
+                border-right: 1px solid #ddd;
+                text-align: center;
+                &:nth-child(5){
+                    width: 93px;
+                }
+                &:nth-child(6){
+                    width: 93px;
+                }
+                &:nth-child(9){
+                    width: 247px;
+                    border-right: none;                   
+                    span{
+                        width: 40px;
+                        height: 18px;
+                        color: #fb1520;
+                        background: #dbdce0;
+                        padding:3px;
+                        margin-left:-3px;
+                    }
+                }
+            }
+            
+        }
+        .warp1{
+            width: 220px;
+            height: 344px;
+            border: 1px dashed #ddd;
+            margin: 20px 19px 0 0;
+            float: left;
+            .pacture{
+                width: 219px;
+                height: 219px;
+                
+            }
+            .free{
+                width:220px;
+                height: 14px;
+                line-height: 14px;
+                float: left;
+                margin-top: 5px;
+            }
+            .fen{
+                width: 50px;
+                height: 14px;
+                line-height: 14px;
+                margin-top: 30px;
+                margin-left: 10px;
+                float: left;
+            }
+            .see{
+                float: left;
+                width: 94px;
+                margin-left: 55px;
+                margin-top: 30px;
+                height: 14px;
+                line-height: 14px;
+            }
+            b{
+                color: #fb1520;
+            }
+            .email{
+                width: 169px;
+                margin-left: 10px;
+                margin-top: 10px;
+                float: left;
+                strong{
+                    color: #096894;
+                }
+            }
+            .vip{
+                margin-top: 10px;
+            }
+            &:hover{
+                border:1px solid #fb1520;
+            }
+            .shen{
+                width: 80px;
+                height: 20px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                margin-left:70px;
+                text-align: center;
+                line-height: 20px;
+                color: #818181;
+            }
+        }
+    }
+    // .list1{
+    //     width: 194px;
+    //     height: 394px;
+    //     border: 1px solid #ddd;
+    //     float: left;
+    //     margin-top: -30px;
+    //     .doing{
+    //         height: 30px;
+    //         line-height: 30px;
+    //         font-weight: bold;
+    //         padding-left:15px;
+    //         border-bottom: 1px solid #ddd;
+    //         background: #f5f6f5;
+    //     }
+    //     .list{
+    //         height: 72px;
+    //         border-bottom: 1px solid #ddd;
+    //         img{
+    //             margin: 11px 13px 11px 9px;
+    //             float: left;
+    //         }
+    //         .shang{
+    //             width: 110px;
+    //         }
+    //     }
+    // }
+}

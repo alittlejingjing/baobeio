@@ -54,6 +54,11 @@ gulp.task("php", ()=>{
     .pipe(gulp.dest("dist/php"))
     .pipe(connect.reload());
 })
+gulp.task("json", ()=>{
+    return gulp.src("*.json")
+    .pipe(gulp.dest("dist/json"))
+    .pipe(connect.reload());
+})
 
 
 
