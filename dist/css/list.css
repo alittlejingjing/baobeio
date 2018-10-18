@@ -30,7 +30,8 @@ section {
       height: 30px;
       line-height: 30px;
       margin-top: 17px;
-      width: 977px; }
+      width: 977px;
+      float: left; }
       section .zhong ol li {
         float: left;
         width: 69px;
@@ -51,6 +52,36 @@ section {
             background: #dbdce0;
             padding: 3px;
             margin-left: -3px; }
+    section .zhong .shopCar {
+      height: 30px;
+      background: #fb1520;
+      border: 1px solid #ddd;
+      float: left;
+      margin-top: 17px;
+      margin-left: 30px; }
+      section .zhong .shopCar .wode {
+        height: 30px;
+        width: 60px;
+        margin-left: 40px;
+        line-height: 30px;
+        color: #fff;
+        float: left; }
+      section .zhong .shopCar .empty {
+        width: 150px;
+        height: 30px;
+        background: url(../images/bar_ico1.png) no-repeat;
+        background-size: 30px 30px;
+        position: relative; }
+        section .zhong .shopCar .empty span {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 5px;
+          right: 15px;
+          background: #fff;
+          border-radius: 50%;
+          line-height: 20px;
+          text-align: center; }
     section .zhong .warp1 {
       width: 220px;
       height: 344px;
@@ -93,6 +124,9 @@ section {
         margin-top: 10px; }
       section .zhong .warp1:hover {
         border: 1px solid #fb1520; }
+      section .zhong .warp1:hover .shen {
+        background: #fb1520;
+        color: #fff; }
       section .zhong .warp1 .shen {
         width: 80px;
         height: 20px;
