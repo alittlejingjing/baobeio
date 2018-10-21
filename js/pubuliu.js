@@ -19,16 +19,22 @@
 
                 this.bindEvent();
             },
+            //加载数据
             loadJson:function(){
                 var opt = {
+                    //链接接口
                     url:"http://www.wookmark.com/api/json/popular",
+                    //预期服务器返回的数据类型
                     dataType:"jsonp",
+                    //发送到服务器的数据
                     data:{page:this.page},
                     // this => 指向实例化对象;
+                    //检测上下文
                     context:this
                 }
                 return $.ajax(opt);
             },
+            //渲染页面
             renderPage:function(json){
                 // console.log(json);
                 var html = "";
@@ -36,8 +42,10 @@
 
                     // var height = json[i].height / (json[i].width / 220);
                     // if(isNaN(height)) continue; 
-                    html += `  <div class="warp1 clearfix">
-                                <a href="http://localhost:8888/detail.html"><img class="pacture" src="${json[i].image}" alt=""></a>
+                    html += `<div class="warp1 clearfix" id="warp1">
+                               
+                                    <img class="pacture" src="${json[i].image}" alt="" data-id="${i}" id="img">
+                               
                                 <p class="free">【免费】修身莫代尔打底衫+4</p>
                                 <p class="fen">份数：<b>8</b></p>
                                 <p class="see">已关注：<b>344</b>次</p>
@@ -115,3 +123,22 @@
 
         var waterfall = new WaterFall();
         waterfall.init();
+
+        //页面跳转
+        //选中元素绑定事件
+        var oWarp=document.getElementById("warp")
+        console.log(oWarp)
+        //委托
+        oWarp.onclick = function(evt){
+            var e = evt || window.event;
+            var img = document.querySelectorAll("#warp1 .pacture");
+            var imgArray = Array.from(img);
+            var target = e.target || e.srcElement;
+         //    console.log(imgArray);   
+             if(imgArray.indexOf(target) != -1){
+                 // 页面跳转;
+                 // 先要储存cookie;
+                 cookie("goodsId",target.getAttribute("data-id"));
+                 location.href = "../detail.html";
+             }
+        }
