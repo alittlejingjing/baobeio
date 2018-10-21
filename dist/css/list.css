@@ -82,6 +82,29 @@ section {
           border-radius: 50%;
           line-height: 20px;
           text-align: center; }
+        section .zhong .shopCar .empty .goods-list {
+          width: 180px;
+          position: absolute;
+          top: 30px; }
+          section .zhong .shopCar .empty .goods-list li {
+            width: 180px;
+            height: 60px;
+            background: rgba(0, 0, 0, 0.5);
+            margin-left: 0; }
+            section .zhong .shopCar .empty .goods-list li img {
+              height: 60px;
+              width: 40px;
+              float: left; }
+            section .zhong .shopCar .empty .goods-list li h3 {
+              float: left;
+              line-height: 60px;
+              padding-left: 10px; }
+            section .zhong .shopCar .empty .goods-list li strong {
+              display: block;
+              float: left;
+              line-height: 60px;
+              padding: 0 5px;
+              color: yellowgreen; }
     section .zhong .warp1 {
       width: 220px;
       height: 344px;

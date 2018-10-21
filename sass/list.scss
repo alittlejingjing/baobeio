@@ -88,7 +88,6 @@ section{
                 background: url(../images/bar_ico1.png) no-repeat;
                 background-size: 30px 30px;
                 position: relative;
-
                 span{
                     width: 20px;
                     height: 20px;
@@ -101,35 +100,36 @@ section{
                     text-align: center;
                 }
 
-                // .goods-list{
-                //     width: 180px;
-                //     position: absolute;
-                //     top: 40px;
+                .goods-list{
+                    width: 180px;
+                    position: absolute;
+                    top: 30px;
 
-                //     li{
-                //         width: 280px;
-                //         height: 60px;
-                //         background: rgba(0,0,0,.5);
-
-                //         img{
-                //             display: inline-block;
-                //             height: 60px;
-                //             width: 40px;
-                //         }
-                //         h3{
-                //             float: left;
-                //             line-height: 60px;
-                //             padding-left: 10px;
-                //         }
-                //         strong{
-                //             display: block;
-                //             float: left;
-                //             line-height: 60px;
-                //             padding:0 5px;
-                //             color: yellowgreen;
-                //         }
-                //     }
-                // }
+                    li{
+                        width: 180px;
+                        height: 60px;
+                        background: rgba(0,0,0,.5);
+                        margin-left: 0;
+                        img{
+                            // display: inline-block;
+                            height: 60px;
+                            width: 40px;
+                            float: left;
+                        }
+                        h3{
+                            float: left;
+                            line-height: 60px;
+                            padding-left: 10px;
+                        }
+                        strong{
+                            display: block;
+                            float: left;
+                            line-height: 60px;
+                            padding:0 5px;
+                            color: yellowgreen;
+                        }
+                    }
+                }
             }
         }
 

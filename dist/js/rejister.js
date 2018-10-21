@@ -53,7 +53,7 @@ var aSpan = document.querySelectorAll("span");
         //     var url="http://localhost:8888/proxy/localhost/1815phpnow/php/register.php";
         //     ajaxPost(url,`userName=${oInp1.value}&mobile=${oInp2.value}&email=${oInp3.value}&passWord=${oInp4.value}&passWordAgain=${oInp5.value}`)
         //     .then(function(res){
-        //         alert(res)
+        //         alert(res)r
         //     })
         // }
         oBtn.onclick=function(){

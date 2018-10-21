@@ -3,43 +3,15 @@ function ShopCar(){
 }
 $.extend(ShopCar.prototype,{
     init:function(){
-        this.main = $(".warp .warp1")
-        // this.loadJson()
-        .then(function(res){
-            // console.log(res);
-            this.json = res.subjects;
-            // this.renderPage()
-        })
         this.bindEvent();
-        this.listSum();
+        
     },
-    // loadJson:function(){
-    //     var opt = {
-    //         url:"http://localhost:8888/proxy/api.douban.com/v2/movie/top250",
-    //         data:{start:0,count:10},
-    //         type:"GET",
-    //         context : this
-    //     }
-    //     return $.ajax(opt);
-    // },
-    // renderPage:function(){
-    //    console.log(this.json)
-    //     var html = "";
-    //     for(var i = 0 ; i < this.json.length ; i ++){
-    //         html += `<li>
-    //                     <img src="${this.json[i].images.small.replace(/\.jpg/g,".webp")}" alt="">
-    //                     <h3>${this.json[i].title}</h3>
-    //                     <button data-id=${this.json[i].id}>加入购物车</button>
-    //                 </li>`
-    //     }
-    //     this.main.html(html);
-    // },
+    //绑定事件
     bindEvent:function(){
-        $(".warp .warp1").on("click","button",this.addCar.bind(this));
-
+        $("#warp").on("click",".shen",this.addCar.bind(this));
         $(".shopCar>div").on("mouseenter",this.showList.bind(this));
         $(".shopCar>div").on("mouseleave",function(){
-            $(".warp1").children().remove();
+            $(".goods-list").children().remove();
         });
         $(".shopCar>div").on("click",function(event){
             var target = event.target ; 
@@ -50,21 +22,22 @@ $.extend(ShopCar.prototype,{
             $(".shopCar>div").triggerHandler("mouseleave");
             this.listSum();
         }.bind(this));
+       
     },
     addCar:function(event){
-        // 我怎么知道把谁加入到购物车之中那?;
+        // console.log(1)
+        //我怎么知道谁加入到了购物车；
         var target = event.target ;
         var goodsId = $(target).attr("data-id");
         // console.log(goodsId);
         // 如何把id加入cookie;
-        // $.cookie("shopCar",goodsId);
+        //$.cookie("shopCar",goodsId);
 
         // cookie 是纯文本;          JSON.parse()  string => array;
         // 加入购物车需要 array 数组; JSON.stringify()  array  => string;
         
         // $.cookie("shopCar",`[${goodsId}]`);
         // console.log($.cookie("shopCar"));
-
         // 分成两种情况;
         // 1. cookie之中没有 shopCar cookie 或者 shopCarcookie里面的值为空数组;
 
@@ -100,20 +73,19 @@ $.extend(ShopCar.prototype,{
 
             // 将数组 转为字符串 方便 储存cookie;
 
-            // console.log(JSON.stringify(cookieArray));
+            //console.log(JSON.stringify(cookieArray));
             $.cookie("shopCar",JSON.stringify(cookieArray));
         }else{
             $.cookie("shopCar",`[{"id":"${goodsId}","num":"1"}]`);
         }
         console.log($.cookie("shopCar"));
         this.listSum();
-    }
-    ,
+    },
     showList:function(event){
         // 判定是否存在购物车,如果不存在购物车就没必要拼接列表了;
-        var target = event.target;
+        // var target = event.target;
 
-        if(target != $(".shopCar>div")[0]) return 0;
+        // if(target != $(".shopCar>div")[0]) return 0;
 
         var cookie;
         if(!(cookie = $.cookie("shopCar"))){ return 0; };
@@ -122,25 +94,21 @@ $.extend(ShopCar.prototype,{
         var html = "";
         // for 购物车里有多少商品就拼接多少个;
         for(var i = 0 ; i < cookieArray.length ; i ++){
-            // console.log(cookieArray[i]);
+            //console.log(cookieArray[i]);
             // for 判断哪一个商品是购物车里的商品;
             for(var j = 0 ; j < this.json.length ; j ++){
                 if(cookieArray[i].id == this.json[j].id){
-                    html += `<div class="warp1 clearfix">
-                                <a href="http://localhost:8888/detail.html"><img class="pacture" src="${json[i].image}" alt=""></a>
-                                <p class="free">【免费】修身莫代尔打底衫+4</p>
-                                <p class="fen">份数：<b>8</b></p>
-                                <p class="see">已关注：<b>344</b>次</p>
-                                <p class="email">邮费：<strong>免邮</strong></p>
-                                <img class="vip" src="images/zzVip.gif" alt="">
-                                <div class="shen">免费申请</div>
-                            </div>`;
+                    html += `<li data-id="${cookieArray[i].id}">
+                                <img src="${this.json[j].image}" alt="">
+                                <h3>喜欢的</h3>
+                                <strong>${cookieArray[i].num}</strong>
+                            </li>`;
                     break;
                 }
             }
         }
         
-        $(".warp").html(html);
+        $(".goods-list").html(html);
     },
     listSum:function(){
         var cookie;

@@ -44,14 +44,14 @@
                     // if(isNaN(height)) continue; 
                     html += `<div class="warp1 clearfix" id="warp1">
                                
-                                    <img class="pacture" src="${json[i].image}" alt="" data-id="${i}" id="img">
+                                <img class="pacture" src="${json[i].image}" alt="" data-id="${i}" id="img">
                                
                                 <p class="free">【免费】修身莫代尔打底衫+4</p>
                                 <p class="fen">份数：<b>8</b></p>
                                 <p class="see">已关注：<b>344</b>次</p>
                                 <p class="email">邮费：<strong>免邮</strong></p>
                                 <img class="vip" src="images/zzVip.gif" alt="">
-                                <div class="shen">免费申请</div>
+                                <button class="shen" data-id="${i}">免费申请</button>
                             </div>
                             `
                 }
@@ -127,6 +127,7 @@
         //页面跳转
         //选中元素绑定事件
         var oWarp=document.getElementById("warp")
+
         console.log(oWarp)
         //委托
         oWarp.onclick = function(evt){
@@ -142,3 +143,10 @@
                  location.href = "../detail.html";
              }
         }
+
+
+
+
+
+
+
